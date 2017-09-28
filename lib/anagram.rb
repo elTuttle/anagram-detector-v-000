@@ -7,7 +7,10 @@ class Anagram
   end
 
   def match(phrase)
+    match_array = []
     word_array = @word.split("")
+    phrase_array = phrase.scan(/\w+/)
+    
   end
-  
+
 end
