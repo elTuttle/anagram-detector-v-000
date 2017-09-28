@@ -10,6 +10,13 @@ class Anagram
     match_array = []
     word_array = @word.split("")
     phrase_array = phrase.scan(/\w+/)
+    phrase_array.each do |phrase_word|
+      if word_array.sort == phrase_word.split("").sort
+        match_array << phrase_word
+      end
+    end
+
+    match_array
     
   end
 
